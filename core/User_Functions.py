@@ -32,7 +32,7 @@ def AvailableTrains():
     Parameters -> None   
     """
 
-    mn = mysql.connector.connect(host="localhost", user=root,
+    mn = mysql.connector.connect(host="34.134.234.214", user=root,
                                  password=123, database="railway")
     cur = mn.cursor()
 
@@ -85,7 +85,7 @@ def CheckFare():
     Parameters -> None
     """
 
-    mn = mysql.connector.connect(host="localhost", user=root,
+    mn = mysql.connector.connect(host="34.134.234.214", user=root,
                                  password=123, database="railway")
     cur = mn.cursor()
 
@@ -135,7 +135,7 @@ def ShowBookings():
     Parameters -> None
     """
 
-    mn = mysql.connector.connect(host="localhost", user=root,
+    mn = mysql.connector.connect(host="34.134.234.214", user=root,
                                  password=123, database="railway")
     cur = mn.cursor()
 
@@ -165,7 +165,7 @@ def BookTrain():
     Parameters -> None
     """
 
-    mn = mysql.connector.connect(host="localhost", user=root,
+    mn = mysql.connector.connect(host="34.134.234.214", user=root,
                                  password=123, database="railway")
     cur = mn.cursor()
     while True:
@@ -284,7 +284,7 @@ def CancelBooking():
     Parameters -> None
     """
 
-    mn = mysql.connector.connect(host="localhost", user=root,
+    mn = mysql.connector.connect(host="34.134.234.214", user=root,
                                  password=123, database="railway")
     cur = mn.cursor()
 

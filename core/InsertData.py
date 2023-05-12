@@ -15,7 +15,7 @@ def InsertDataTrain():
     Parameters -> None
     """
 
-    mn = con.connect(host="localhost",
+    mn = con.connect(host="34.134.234.214",
                      user=root,
                      password=123,
                      database="railway")
