@@ -18,8 +18,8 @@ def CheckDatabase():
 
     print("Checking Database Requirements..")
 
-    db = con.connect(host="localhost", user=YOUR_USERNAME,
-                     database="", password=YOUR_PASSWORD)
+    db = con.connect(host="localhost", user=root,
+                     database="", password=123)
     cur = db.cursor()
     result = None
 
@@ -52,8 +52,8 @@ def CreateTables():
     Parameters -> None
     """
 
-    db = con.connect(host="localhost", user=YOUR_USERNAME,
-                     database="railway", password=YOUR_PASSWORD)
+    db = con.connect(host="localhost", user=root,
+                     database="railway", password=123)
     cur = db.cursor()
 
     cur.execute(
@@ -78,8 +78,8 @@ def CheckConnection():
         print("Checking the Connection to the MySQL Server..")
         connection = con.connect(host='localhost',
                                  database='',
-                                 user=YOUR_USERNAME,
-                                 password=YOUR_PASSWORD)
+                                 user=root,
+                                 password=123)
         if connection.is_connected():
             db_Info = connection.get_server_info()
             print("Connected to MySQL Server Version", db_Info)
